@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PatientEditor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="PatientEditor.LinearLayout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/dimen_16dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="PatientEditor.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:padding">@dimen/dimen_5dp</item>
+    </style>
+
+    <style name="PatientEditor.Spinner">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:prompt">@string/select</item>
+    </style>
+
+    <style name="PatientDetails">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/dimen_16dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="PatientTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:paddingRight">@dimen/dimen_5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/material_teal_300</item>
+    </style>
+
+    <style name="PatientTextView.Detail">
+        <item name="android:layout_weight">5</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="DashboardLinear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="DashboardRelative">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/dimen_150dp</item>
+        <item name="android:background">@color/material_teal_300</item>
+        <item name="android:layout_margin">@dimen/dimen_8dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="DashboardCounter">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_24sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_margin">@dimen/dimen_8dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="DashboardTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_18sp</item>
+        <item name="android:padding">@dimen/dimen_8dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+</resources>

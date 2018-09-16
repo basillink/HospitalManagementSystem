@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender_options">
+        <item>@string/select</item>
+        <item>@string/male</item>
+        <item>@string/female</item>
+    </string-array>
+    <string-array name="genotype_options">
+        <item>@string/select</item>
+        <item>@string/genotype_AA</item>
+        <item>@string/genotype_AS</item>
+        <item>@string/genotype_SS</item>
+        <item>@string/genotype_AC</item>
+        <item>@string/genotype_CC</item>
+        <item>@string/genotype_SC</item>
+    </string-array>
+    <string-array name="blood_group">
+        <item>@string/select</item>
+        <item>@string/group_A_positive</item>
+        <item>@string/group_A_negative</item>
+        <item>@string/group_B_positive</item>
+        <item>@string/group_B_negative</item>
+        <item>@string/group_O_positive</item>
+        <item>@string/group_O_negative</item>
+        <item>@string/group_AB_positive</item>
+        <item>@string/group_AB_positive</item>
+    </string-array>
+</resources>

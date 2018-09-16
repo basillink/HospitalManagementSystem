@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimen_16dp"
+        android:paddingRight="@dimen/dimen_16dp"
+        android:paddingTop="@dimen/dimen_16dp"
+        android:text="Patient Information Detail"
+        android:textAllCaps="true"
+        android:textColor="@color/material_teal_500"
+        android:textSize="@dimen/text_size_24sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".Fragments.PatientDetailsFragment">
+
+            <LinearLayout
+                android:id="@+id/layout_first_name"
+                style="@style/PatientDetails"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    style="@style/PatientTextView"
+                    android:text="@string/first_name" />
+
+                <TextView
+                    android:id="@+id/patient_first_name"
+                    style="@style/PatientTextView.Detail"
+                    android:text="@string/first_name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_last_name"
+                style="@style/PatientDetails"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_first_name">
+
+                <TextView
+                    style="@style/PatientTextView"
+                    android:text="@string/last_name" />
+
+                <TextView
+                    android:id="@+id/patient_last_name"
+                    style="@style/PatientTextView.Detail"
+                    android:text="@string/last_name" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_phone"
+                style="@style/PatientDetails"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_last_name">
+
+                <TextView
+                    style="@style/PatientTextView"
+                    android:text="@string/phone_number" />
+
+                <TextView
+                    android:id="@+id/patient_phone"
+                    style="@style/PatientTextView.Detail"
+                    android:text="@string/phone_format" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_address"
+                style="@style/PatientDetails"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_phone">
+
+                <TextView
+                    style="@style/PatientTextView"
+                    android:text="@string/contact_address" />
+
+                <TextView
+                    android:id="@+id/patient_address"
+                    style="@style/PatientTextView.Detail"
+                    android:text="@string/contact_address" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_dob"
+                style="@style/PatientDetails"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_address">
+
+                <TextView
+                    style="@style/PatientTextView"
+                    android:text="@string/date_of_birth" />
+
+                <TextView
+                    android:id="@+id/patient_dob"
+                    style="@style/PatientTextView.Detail"
+                    android:text="@string/date_format" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_gender"
+                style="@style/PatientDetails"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_dob">
+
+                <TextView
+                    style="@style/PatientTextView"
+                    android:text="@string/gender" />
+
+                <TextView
+                    android:id="@+id/patient_gender"
+                    style="@style/PatientTextView.Detail"
+                    android:text="@string/male" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_genotype"
+                style="@style/PatientDetails"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_gender">
+
+                <TextView
+                    style="@style/PatientTextView"
+                    android:text="@string/genotype" />
+
+                <TextView
+                    android:id="@+id/patient_genotype"
+                    style="@style/PatientTextView.Detail"
+                    android:text="@string/genotype_AA" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_blood_group"
+                style="@style/PatientDetails"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_genotype">
+
+                <TextView
+                    style="@style/PatientTextView"
+                    android:text="@string/blood_group" />
+
+                <TextView
+                    android:id="@+id/patient_blood_group"
+                    style="@style/PatientTextView.Detail"
+                    android:text="@string/group_A_positive" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_next_kin"
+                style="@style/PatientDetails"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_blood_group">
+
+                <TextView
+                    style="@style/PatientTextView"
+                    android:text="@string/next_kin" />
+
+                <TextView
+                    android:id="@+id/patient_next_kin"
+                    style="@style/PatientTextView.Detail"
+                    android:text="@string/next_kin" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_kin_relationship"
+                style="@style/PatientDetails"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_next_kin">
+
+                <TextView
+                    style="@style/PatientTextView"
+                    android:text="@string/kin_relationship" />
+
+                <TextView
+                    android:id="@+id/patient_kin_relation"
+                    style="@style/PatientTextView.Detail"
+                    android:text="@string/kin_relationship" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_kin_phone"
+                style="@style/PatientDetails"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_kin_relationship">
+
+                <TextView
+                    style="@style/PatientTextView"
+                    android:text="@string/kins_phone_number" />
+
+                <TextView
+                    android:id="@+id/patient_kin_phone"
+                    style="@style/PatientTextView.Detail"
+                    android:text="@string/phone_format" />
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>

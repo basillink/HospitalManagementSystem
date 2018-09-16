@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_8dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DashBoardActivity"
+    tools:showIn="@layout/app_bar_dash_board">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/DashboardLinear">
+
+            <RelativeLayout
+                android:id="@+id/layout_staff"
+                style="@style/DashboardRelative">
+
+                <TextView
+                    style="@style/DashboardCounter"
+                    android:text="@string/counter" />
+
+                <TextView
+                    style="@style/DashboardTextView"
+                    android:text="@string/staff" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_patients"
+                style="@style/DashboardRelative">
+
+                <TextView
+                    style="@style/DashboardCounter"
+                    android:text="@string/counter" />
+
+                <TextView
+                    style="@style/DashboardTextView"
+                    android:text="@string/patients" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/DashboardLinear">
+
+            <RelativeLayout
+                android:id="@+id/layout_consultation"
+                style="@style/DashboardRelative">
+
+                <TextView
+                    style="@style/DashboardCounter"
+                    android:text="@string/counter" />
+
+                <TextView
+                    style="@style/DashboardTextView"
+                    android:text="@string/consultation" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_pharmacy"
+                style="@style/DashboardRelative">
+
+                <TextView
+                    style="@style/DashboardCounter"
+                    android:text="@string/counter" />
+
+                <TextView
+                    style="@style/DashboardTextView"
+                    android:text="@string/pharmacy" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/DashboardLinear">
+
+            <RelativeLayout
+                android:id="@+id/layout_finance"
+                style="@style/DashboardRelative">
+
+                <TextView
+                    style="@style/DashboardCounter"
+                    android:text="@string/counter" />
+
+                <TextView
+                    style="@style/DashboardTextView"
+                    android:text="@string/finance" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_procurement"
+                style="@style/DashboardRelative">
+
+                <TextView
+                    style="@style/DashboardCounter"
+                    android:text="@string/counter" />
+
+                <TextView
+                    style="@style/DashboardTextView"
+                    android:text="@string/procurement" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

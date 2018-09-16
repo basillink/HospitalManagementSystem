@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_staff"
+            android:icon="@drawable/ic_staff"
+            android:title="@string/staff" />
+        <item
+            android:id="@+id/nav_patients"
+            android:icon="@drawable/ic_patient"
+            android:title="@string/patients" />
+        <item
+            android:id="@+id/nav_consultation"
+            android:icon="@drawable/ic_consult"
+            android:title="@string/consultation" />
+        <item
+            android:id="@+id/nav_pharmacy"
+            android:icon="@drawable/ic_pharmacy"
+            android:title="@string/pharmacy" />
+        <item
+            android:id="@+id/nav_finance"
+            android:icon="@drawable/ic_finance"
+            android:title="@string/finance" />
+        <item
+            android:id="@+id/nav_procurement"
+            android:icon="@drawable/ic_procurements"
+            android:title="@string/procurement" />
+    </group>
+
+    <item android:title="@string/help">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_black"
+                android:title="@string/settings" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_feedback"
+                android:title="@string/feedback" />
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/ic_info"
+                android:title="@string/app_info" />
+        </menu>
+
+    </item>
+</menu>
